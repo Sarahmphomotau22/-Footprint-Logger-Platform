@@ -1,0 +1,134 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url("background\ image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  
+}
+
+/* NAVBAR */
+.navbar {
+  background: linear-gradient(to right, #2e7d32, #0288d1);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* HOME */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #2e7d32;
+}
+
+.hero p {
+  margin: 15px 0;
+}
+
+/* CARD (FORMS) */
+.card {
+  background: rgba(255,255,255,0.95);
+  width: 380px;
+  padding: 30px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* INPUT */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+/* LINK TEXT */
+.link {
+  color: #0288d1;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* DASHBOARD */
+.container {
+  padding: 40px;
+}
+
+.dashboard h2 {
+  text-align: center;
+  color: #2e7d32;
+}
+
+/* LIST ITEMS */
+.list p {
+  background: white;
+  padding: 12px;
+  margin: 8px auto;
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* LEADERBOARD */
+.leaderboard {
+  width: 400px;
+  margin: auto;
+}
+
+.leaderboard p {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
