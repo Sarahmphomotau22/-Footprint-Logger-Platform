@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
 
 const activitySchema = new mongoose.Schema({
-  userId: mongoose.Schema.Types.ObjectId,
+  userId: String,
   type: String,
-  value: Number,
   emissions: Number,
   date: { type: Date, default: Date.now }
 });
