@@ -8,9 +8,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/footprint")
-  .then(() => console.log("MongoDB Connected ✅"))
-  .catch(err => console.log("❌ Connection error:", err.message));
+//mongoose.connect(process.env.MONGO_URI)
+//  .then(() => console.log("MongoDB Connected ✅"))
+//  .catch(err => console.log("❌ Connection error:", err.message));
+// MongoDB configuration
+const DB_URL = process.env.MONGO_URI; 
+mongoose.connect(DB_URL);
+const conn = mongoose.connection;
+conn.once('open', () => {
+    console.log('✅ Successfully connected to database');
+});
+conn.on('error', (err) => {
+    console.error('❌ Failed to connect to database:', err);
+});
+
 
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/activities", require("./routes/activityRoutes"));
