@@ -1,20 +1,24 @@
-require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
-app.use(cors());
+
+// Connect to MongoDB Atlas
+mongoose.connect(process.env.MONGO_URI || "mongodb+srv://sarahmphomotau22_db_user:Gau070918@cluster0.4yxjekd.mongodb.net/footprintLogger?retryWrites=true&w=majority")
+  .then(() => console.log("✅ Connected to MongoDB Atlas"))
+  .catch(err => console.error("❌ Connection error:", err));
+
+// Middleware (optional, for JSON parsing)
 app.use(express.json());
 
-const MONGO_URI = "mongodb+srv://sarahmphomotau22_db_user:Orifha0709@cluster0.4yxjekd.mongodb.net/footprint?retryWrites=true&w=majority&appName=Cluster0";
+// Test route
+app.get("/test", (req, res) => {
+  res.send("MongoDB Atlas connection is working!");
+});
 
-mongoose.connect(MONGO_URI)
-  .then(() => console.log("MongoDB Atlas Connected "))
-  .catch(err => console.log("Connection error:", err.message));
-
-app.use("/api/auth", require("./routes/authRoutes"));
-app.use("/api/activities", require("./routes/activityRoutes"));
-
+// Start server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+});
