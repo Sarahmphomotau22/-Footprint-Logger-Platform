@@ -16,4 +16,3 @@ A web application that allows users to log daily activities contributing to carb
 - Database: MongoDB
 - Persistence: LocalStorage (single-session)
 
-https://github.com/Sarahmphomotau22/-Footprint-Logger-Platform
