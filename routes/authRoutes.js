@@ -4,13 +4,11 @@ const bcrypt = require("bcryptjs");
 
 router.post("/register", async (req, res) => {
   try {
-    // Check if email already exists
     const existing = await User.findOne({ email: req.body.email });
     if (existing) {
       return res.status(400).json({ message: "Email already registered" });
     }
 
-    // Hash the password before saving
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
 
     const user = new User({
@@ -37,9 +35,7 @@ router.post("/login", async (req, res) => {
       return res.status(400).json({ message: "User not found" });
     }
 
-    // Compare entered password with hashed password
     const isMatch = await bcrypt.compare(req.body.password, user.password);
-
     if (!isMatch) {
       return res.status(400).json({ message: "Wrong password" });
     }
