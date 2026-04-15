@@ -8,9 +8,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB Atlas Connected "))
-  .catch(err => console.log("Connection error:", err.message));
+mongoose.connect("mongodb://127.0.0.1:27017/footprint")
+  .then(() => console.log("MongoDB Connected ✅"))
+  .catch(err => console.log("❌ Connection error:", err.message));
 
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/activities", require("./routes/activityRoutes"));
