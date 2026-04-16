@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/-Footprint-Logger-Platform/static/css/main.82407bb4.css",
-    "main.js": "/-Footprint-Logger-Platform/static/js/main.91074aa2.js",
+    "main.js": "/-Footprint-Logger-Platform/static/js/main.8d8f2f18.js",
     "static/js/488.4c937e46.chunk.js": "/-Footprint-Logger-Platform/static/js/488.4c937e46.chunk.js",
     "static/media/background image.png": "/-Footprint-Logger-Platform/static/media/background image.b77297f2a1fc61cfab81.png",
     "index.html": "/-Footprint-Logger-Platform/index.html",
     "main.82407bb4.css.map": "/-Footprint-Logger-Platform/static/css/main.82407bb4.css.map",
-    "main.91074aa2.js.map": "/-Footprint-Logger-Platform/static/js/main.91074aa2.js.map",
+    "main.8d8f2f18.js.map": "/-Footprint-Logger-Platform/static/js/main.8d8f2f18.js.map",
     "488.4c937e46.chunk.js.map": "/-Footprint-Logger-Platform/static/js/488.4c937e46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82407bb4.css",
-    "static/js/main.91074aa2.js"
+    "static/js/main.8d8f2f18.js"
   ]
 }
