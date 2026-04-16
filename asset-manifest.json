@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.77378052.css",
-    "main.js": "/static/js/main.583cba39.js",
-    "static/js/488.4c937e46.chunk.js": "/static/js/488.4c937e46.chunk.js",
-    "static/media/background image.png": "/static/media/background image.b77297f2a1fc61cfab81.png",
-    "index.html": "/index.html",
-    "main.77378052.css.map": "/static/css/main.77378052.css.map",
-    "main.583cba39.js.map": "/static/js/main.583cba39.js.map",
-    "488.4c937e46.chunk.js.map": "/static/js/488.4c937e46.chunk.js.map"
+    "main.css": "/-Footprint-Logger-Platform/static/css/main.82407bb4.css",
+    "main.js": "/-Footprint-Logger-Platform/static/js/main.a578cd07.js",
+    "static/js/488.4c937e46.chunk.js": "/-Footprint-Logger-Platform/static/js/488.4c937e46.chunk.js",
+    "static/media/background image.png": "/-Footprint-Logger-Platform/static/media/background image.b77297f2a1fc61cfab81.png",
+    "index.html": "/-Footprint-Logger-Platform/index.html",
+    "main.82407bb4.css.map": "/-Footprint-Logger-Platform/static/css/main.82407bb4.css.map",
+    "main.a578cd07.js.map": "/-Footprint-Logger-Platform/static/js/main.a578cd07.js.map",
+    "488.4c937e46.chunk.js.map": "/-Footprint-Logger-Platform/static/js/488.4c937e46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77378052.css",
-    "static/js/main.583cba39.js"
+    "static/css/main.82407bb4.css",
+    "static/js/main.a578cd07.js"
   ]
 }
